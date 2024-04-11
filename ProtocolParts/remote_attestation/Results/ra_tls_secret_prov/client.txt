@@ -1,0 +1,29 @@
+$ gramine-sgx ./client
+Attributes:
+    mr_enclave:  f4f801befaeea2feb339aa77e494c8e6c413c78384aaf70823899433530cf6b2
+    mr_signer:   e4efc13a195c42225f7ca745d1a383e877dedc17135df09101de8479aa4371f6
+    isv_prod_id: 0
+    isv_svn:     0
+    attr.flags:  0000000000000006
+    attr.xfrm:   0000000000000007
+    mask.flags:  ffffffffffffffff
+    mask.xfrm:   fffffffffff9ff1b
+    misc_select: 00000000
+    misc_mask:   ffffffff
+    modulus:     097f6f20c8d8f3617cb11db7f9d1a59b...
+    exponent:    3
+    signature:   d03cc0ac1a85be73b63fae5434ddf5e2...
+    date:        2023-01-17
+Gramine is starting. Parsing TOML manifest file, this may take some time...
+-----------------------------------------------------------------------------------------------------------------------
+Gramine detected the following insecure configurations:
+
+  - sgx.debug = true                           (this is a debug enclave)
+
+Gramine will continue application execution, but this configuration must not be used in production!
+-----------------------------------------------------------------------------------------------------------------------
+
+--- [main] Re-starting myself using execvp() ---
+--- [child] Read from protected file: 'helloworld' ---
+--- [parent] Read from protected file: 'helloworld' ---
+

@@ -1,0 +1,21 @@
+data_exchange$ python3 run.py --server --offload --no-sgx --abd --cpabe 32
+***********************************************************************
+CONFIGURATION PARAMETERS:
+
+Host device - EDGE (Desktop with Intel CPU)
+Energy saving - Offload
+Trusted execution - Disabled (SGX)
+Crypto operation - Attribute-based decryption
+Crypto library - CPABE
+Plaintext size (B) - 32
+
+***********************************************************************
+FEATURE IMPLEMENTATION:
+
+Removing old outputs
+Waiting to receive data from client
+Receive ABE ciphertext from client and decrypt it
+Send AES encrypted plaintext to client
+All decrypted outputs match with plaintext
+***********************************************************************
+

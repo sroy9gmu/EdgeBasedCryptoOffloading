@@ -1,0 +1,30 @@
+data_exchange $ python3 run.py --client --offload --no-sgx --abd --cpabe 1024
+***********************************************************************
+CONFIGURATION PARAMETERS:
+
+Host device - END (Raspberry Pi Zero W)
+Energy saving - Offload
+Trusted execution - Disabled (SGX)
+Crypto operation - Attribute-based decryption
+Crypto library - CPABE
+Plaintext size (B) - 1024
+
+***********************************************************************
+FEATURE IMPLEMENTATION:
+
+Removing old outputs
+Start of setting up ABD keys
+End of setting up ABD keys
+
+Start of sending ABD keys to EDGE device
+sunanda@192.168.1.202's password: 
+End of sending ABD keys to EDGE device
+
+Ciphertext generated for transmission to EDGE device
+Number of iterations =  1000
+Start time for all ABDs =  Wed Aug 23 12:21:13 2023
+End time for all ABDs =  Wed Aug 23 12:22:10 2023
+Decrypt AES encrypted plaintext from server
+Average duration (microseconds) =  40019.6107679335
+***********************************************************************
+

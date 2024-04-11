@@ -1,0 +1,41 @@
+loader.entrypoint = "file:{{ gramine.libos }}"
+libos.entrypoint = "/usr/local/bin/cpabe-dec"
+
+loader.log_level = "{{ log_level }}"
+
+loader.env.LD_LIBRARY_PATH = "/lib:{{ arch_libdir }}:/usr{{ arch_libdir }}:/usr/local/lib"
+loader.env.PATH = "{{ execdir }}"
+
+loader.insecure__use_cmdline_argv = true
+
+fs.mounts = [
+  { path = "/lib", uri = "file:{{ gramine.runtimedir() }}" },
+  { path = "{{ arch_libdir }}", uri = "file:{{ arch_libdir }}" },
+  { path = "/usr/lib", uri = "file:/usr/lib" },
+  { path = "{{ execdir }}", uri = "file:{{ execdir }}" },
+  { path = "/usr/local/bin/cpabe-dec", uri = "file:/usr/local/bin/cpabe-dec" },
+  { path = "/usr/local/lib/libpbc.so.1", uri = "file:/usr/local/lib/libpbc.so.1" },
+]
+
+sgx.debug = true
+sgx.edmm_enable = {{ 'true' if env.get('EDMM', '0') == '1' else 'false' }}
+sgx.nonpie_binary = true
+sgx.enclave_size = "512M"
+sgx.max_threads = 4
+
+sgx.trusted_files = [
+  "file:{{ gramine.libos }}",
+  "file:{{ execdir }}/",
+  "file:{{ gramine.runtimedir() }}/",
+  "file:{{ arch_libdir }}/",
+  "file:/usr/{{ arch_libdir }}/",
+  "file:/usr/local/bin/cpabe-dec",
+  "file:/usr/local/lib/libpbc.so.1",
+]
+
+sgx.allowed_files = [
+  "file:pub_key",
+  "file:sai_priv_key",
+  "file:client-file.txt",
+  "file:client-file.txt.cpabe",
+]

@@ -1,0 +1,25 @@
+sunanda@raspberrypi:~/Downloads/tee_sgx/edge_offload/v4/data_exchange $ python3 provider.py args.txt
+
+********END DEVICE: Di********
+
+Waiting to receive data request
+Data request received
+
+START: Encrypt requested data with AES
+END: Encrypt requested data with AES
+
+START: Send AES encrypted data to SAi
+END: Send AES encrypted data to SAi
+
+START: Receive ABE encrypted data from SAi
+END: Receive ABE encrypted data from SAi
+
+START: Encrypt ABE output with AES
+END: Encrypt ABE output with AES
+
+START: Sending encrypted ABE output to Dj
+END: Sending encrypted ABE output to Dj
+
+Waiting to receive acknowledgement
+Acknowledgement received
+

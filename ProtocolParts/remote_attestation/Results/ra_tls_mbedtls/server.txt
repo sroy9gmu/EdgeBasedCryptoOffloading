@@ -1,0 +1,45 @@
+$ Attributes:
+    mr_enclave:  27501f7e3738e94a02b0e97e3cea6493a5cfff7220c340da807095d69a02fe9f
+    mr_signer:   e4efc13a195c42225f7ca745d1a383e877dedc17135df09101de8479aa4371f6
+    isv_prod_id: 0
+    isv_svn:     0
+    attr.flags:  0000000000000006
+    attr.xfrm:   0000000000000007
+    mask.flags:  ffffffffffffffff
+    mask.xfrm:   fffffffffff9ff1b
+    misc_select: 00000000
+    misc_mask:   ffffffff
+    modulus:     097f6f20c8d8f3617cb11db7f9d1a59b...
+    exponent:    3
+    signature:   3f0abe8d7b03a7b1b24040541651f36c...
+    date:        2023-01-17
+Gramine is starting. Parsing TOML manifest file, this may take some time...
+-----------------------------------------------------------------------------------------------------------------------
+Gramine detected the following insecure configurations:
+
+  - sgx.debug = true                           (this is a debug enclave)
+  - loader.insecure__use_cmdline_argv = true   (forwarding command-line args from untrusted host to the app)
+  - sgx.allowed_files = [ ... ]                (some files are passed through from untrusted host without verification)
+
+Gramine will continue application execution, but this configuration must not be used in production!
+-----------------------------------------------------------------------------------------------------------------------
+
+  . Seeding the random number generator... ok
+
+  . Creating the RA-TLS server cert and key (using "epid" as attestation type)... ok
+  . Bind on https://localhost:4433/ ... ok
+  . Setting up the SSL data.... ok
+  . Waiting for a remote connection ... ok
+  . Performing the SSL/TLS handshake... ok
+  < Read from client: 18 bytes read
+
+GET / HTTP/1.0
+
+  > Write to client: 158 bytes written
+
+HTTP/1.0 200 OK
+Content-Type: text/html
+
+<h2>mbed TLS Test Server</h2>
+<p>Successful connection using: TLS-ECDHE-ECDSA-WITH-CHACHA20-POLY1305-SHA256</p>
+

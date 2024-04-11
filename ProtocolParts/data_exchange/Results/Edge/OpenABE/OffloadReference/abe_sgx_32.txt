@@ -1,0 +1,30 @@
+data_exchange$ sudo python3 run.py --server --offload --sgx --abe --openabe 32
+***********************************************************************
+CONFIGURATION PARAMETERS:
+
+Host device - EDGE (Desktop with Intel CPU)
+Energy saving - Offload
+Trusted execution - Enabled (SGX)
+Crypto operation - Attribute-based encryption
+Crypto library - OpenABE
+Plaintext size (B) - 32
+
+***********************************************************************
+FEATURE IMPLEMENTATION:
+
+Removing old outputs
+Start of setting up keys (inside enclave)
+End of setting up keys (inside enclave)
+
+Waiting to receive data from client
+Number of iterations = 100
+
+Receive AES encrypted plaintext from client and decrypt it
+Send ABE ciphertext to client
+
+Start of encryption check
+Decryption of all ciphertexts matches with plaintext
+End of encryption check
+
+***********************************************************************
+

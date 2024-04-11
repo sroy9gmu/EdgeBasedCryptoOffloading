@@ -1,0 +1,15 @@
+sunanda@raspberrypi:~/Downloads/tee_sgx/edge_offload/v4/data_exchange $ python3 requester.py args.txt 
+
+Number of data requests -  400
+START: Sending request 1 for data to Di - Mon Oct 23 14:45:00 2023
+1698086700.9902346
+
+Number of ABDs -  1000
+END: Receive encrypted ABD output from SAj -  Mon Oct 23 14:45:29 2023
+1698086729.2005339
+
+Number of AES' -  20000
+
+START: Retrieve requested data on Dj -  Mon Oct 23 14:45:29 2023
+END: Retrieve requested data on Dj - Mon Oct 23 14:45:46 2023, result = wqpddovjrxekcqbkabrwbmkqxmoyyjcb
+Mean AES decryption time - 526.1315317943962 microseconds

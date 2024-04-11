@@ -1,0 +1,23 @@
+sunanda@raspberrypi:~/Downloads/tee_sgx/edge_offload/v4/data_exchange $ python3 provider.py args.txt
+
+********END DEVICE: Di********
+
+Waiting to receive data request
+Data request received
+
+START: Setting up ABE keys on Di
+END: Setting up ABE keys on Di
+
+START: Send ABD keys to Dj
+sunanda@192.168.1.177's password: 
+END: Send ABD keys to Dj
+
+START: Encrypting requested data using ABE
+END: Encrypting requested data using ABE
+
+START: Sending requested data to Dj
+END: Sending requested data to Dj
+
+Waiting to receive acknowledgement
+Acknowledgement received
+

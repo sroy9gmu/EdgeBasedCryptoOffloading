@@ -1,0 +1,26 @@
+data_exchange $ python3 run.py --client --offload --sgx --abe --openabe 32
+***********************************************************************
+CONFIGURATION PARAMETERS:
+
+Host device - END (Raspberry Pi Zero W)
+Energy saving - Offload
+Trusted execution - Enabled (SGX)
+Crypto operation - Attribute-based encryption
+Crypto library - OpenABE
+Plaintext size (B) - 32
+
+***********************************************************************
+FEATURE IMPLEMENTATION:
+
+Removing old outputs
+Number of iterations = 100
+
+Start time for all ABEs = Sat Aug 19 22:13:18 2023
+
+Send plaintext encrypted with AES-256-CBC cipher to server
+End time for all ABEs = Sat Aug 19 22:19:32 2023
+
+Average duration (microseconds) = 3722668.436579472
+
+***********************************************************************
+

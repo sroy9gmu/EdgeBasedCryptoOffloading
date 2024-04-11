@@ -1,0 +1,14 @@
+sunanda@raspberrypi:~/Downloads/tee_sgx/edge_offload/v4/data_exchange $ python3 requester.py args.txt 
+
+Number of data requests -  10
+START: Sending request 1 for data to Di - Mon Oct 23 12:40:02 2023
+END: Receive ABD input 10 from Di - Mon Oct 23 12:40:24 2023
+Mean data request time - 2164831.3999176025 microseconds
+
+Number of ABDs -  300
+START: Decrypt received data 1 using ABD - Mon Oct 23 12:40:24 2023
+END: Decrypt received data 300 using ABD - Mon Oct 23 12:40:42 2023
+Mean ABD time - 58067.8468068954 microseconds
+Mean copy time - 2298.9344798760867 microseconds
+result =  wqpddovjrxekcqbkabrwbmkqxmoyyjcb
+

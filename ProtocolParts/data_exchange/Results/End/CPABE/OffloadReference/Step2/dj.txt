@@ -1,0 +1,26 @@
+sunanda@raspberrypi:~/Downloads/tee_sgx/edge_offload/v4/data_exchange $ python3 requester.py args.txt 
+
+Number of data requests -  300
+START: Sending request 1 for data to Di - Mon Oct 23 13:00:38 2023
+END: Receive ABD input 300 from Di - Mon Oct 23 13:00:54 2023
+Mean data request time - 53772.95176188151 microseconds
+
+Number of AES' -  20000
+START: Decrypt received data using AES -  Mon Oct 23 13:00:54 2023
+END: Decrypt received data using AES -  Mon Oct 23 13:01:13 2023
+Mean AES decryption time - 584.2146775766381 microseconds
+
+Number of ABDs -  700
+START: Send ABD input to and receive ABD output 1 from SAj - Mon Oct 23 13:01:13 2023
+END: Send ABD input to and receive ABD output 700 from SAj - Mon Oct 23 13:01:30 2023
+Mean offloaded ABD time - 18062.28456378826 microseconds
+
+Number of AES' -  20000
+
+START: Retrieve requested data on Dj -  Mon Oct 23 13:01:30 2023
+END: Retrieve requested data on Dj - Mon Oct 23 13:01:48 2023, result = wqpddovjrxekcqbkabrwbmkqxmoyyjcb
+Mean AES decryption time - 539.297180700266 microseconds
+
+
+sunanda@sunanda-OptiPlex-5040:~/Downloads/tee_sgx/edge_offload/v4/data_exchange$ python3 edge.py args.txt
+Mean copy time - 282.24666898934436 microseconds

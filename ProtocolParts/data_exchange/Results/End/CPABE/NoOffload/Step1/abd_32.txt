@@ -1,0 +1,22 @@
+data_exchange $ python3 run.py --client --no-offload --no-sgx --d-abe --cpabe 32
+***********************************************************************
+CONFIGURATION PARAMETERS:
+
+Host device - END (Raspberry Pi Zero W)
+Energy saving - No offload
+Trusted execution - Disabled (SGX)
+Crypto operation - Attribute-based decryption
+Crypto library - CPABE
+Plaintext size (B) - 32
+
+***********************************************************************
+FEATURE IMPLEMENTATION:
+
+Start of setting up keys
+End of setting up keys
+Number of iterations =  1000
+Start time for all decryptions =  Sat Aug 19 16:40:09 2023
+End time for all decryptions =  Sat Aug 19 16:43:40 2023
+Average duration (microseconds) =  209464.91764958086
+***********************************************************************
+

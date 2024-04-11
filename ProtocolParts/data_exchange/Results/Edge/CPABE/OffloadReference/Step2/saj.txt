@@ -1,0 +1,22 @@
+sunanda@sunanda-OptiPlex-5040:~/Downloads/tee_sgx/edge_offload/v4/data_exchange$ python3 edge.py args.txt
+
+********EDGE DEVICE: SAi********
+
+Waiting to receive ABE input from Di
+Received ABE input from Di
+
+START: Decrypt ABE input with AES on SAi
+END: Decrypt ABE input with AES on SAi
+
+START: Setting up ABE keys on SAi
+END: Setting up ABE keys on SAi
+
+START: Send ABD keys to SAj
+sunanda@192.168.1.202's password: 
+END: Send ABD keys to SAj
+
+START: Sending ABE output to Di
+END: Sending ABE output to Di
+
+********EDGE DEVICE: SAj********
+Mean copy time - 358.50917821599984 ms

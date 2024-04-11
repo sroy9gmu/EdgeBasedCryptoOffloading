@@ -1,0 +1,28 @@
+data_exchange $ python3 run.py --client --no-offload --no-sgx --abe --openabe 32
+***********************************************************************
+CONFIGURATION PARAMETERS:
+
+Host device - END (Raspberry Pi Zero W)
+Energy saving - No offload
+Trusted execution - Disabled (SGX)
+Crypto operation - Attribute-based encryption
+Crypto library - OpenABE
+Plaintext size (B) - 32
+
+***********************************************************************
+FEATURE IMPLEMENTATION:
+
+Start of setting up keys
+End of setting up keys
+
+Number of iterations = 1000
+
+Start time for all encryptions =  Sat Aug 19 21:03:09 2023
+End time for all encryptions =  Sat Aug 19 21:07:06 2023
+Average duration (microseconds) = 233753.13217766455
+
+Start of encryption check
+Decryption of all ciphertexts matches with plaintext
+End of encryption check
+
+

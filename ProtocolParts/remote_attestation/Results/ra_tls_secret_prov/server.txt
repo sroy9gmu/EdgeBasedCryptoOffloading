@@ -1,0 +1,14 @@
+$ --- Reading the master key for encrypted files from 'wrap_key' ---
+--- Starting the Secret Provisioning server on port 4433 ---
+IAS report: signature verified correctly
+IAS report: allowing quote status GROUP_OUT_OF_DATE
+            [ advisory URL: https://security-center.intel.com ]
+            [ advisory IDs: ["INTEL-SA-00106", "INTEL-SA-00115", "INTEL-SA-00135", "INTEL-SA-00203", "INTEL-SA-00220", "INTEL-SA-00233", "INTEL-SA-00270", "INTEL-SA-00293", "INTEL-SA-00320", "INTEL-SA-00329", "INTEL-SA-00334", "INTEL-SA-00381", "INTEL-SA-00389", "INTEL-SA-00477", "INTEL-SA-00614", "INTEL-SA-00615", "INTEL-SA-00617"] ]
+Received the following measurements from the client:
+  - MRENCLAVE:   f4f801befaeea2feb339aa77e494c8e6c413c78384aaf70823899433530cf6b2
+  - MRSIGNER:    e4efc13a195c42225f7ca745d1a383e877dedc17135df09101de8479aa4371f6
+  - ISV_PROD_ID: 0
+  - ISV_SVN:     0
+[ WARNING: In reality, you would want to compare against expected values! ]
+
+
