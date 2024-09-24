@@ -16,4 +16,14 @@ OS Versions:
 
 Reference Paper: 
     
-    Reconfigurable security: Edge-computing-based framework for IoT - https://arxiv.org/pdf/1709.06223 
+    R. -H. Hsu, J. Lee, T. Q. S. Quek and J. -C. Chen, "Reconfigurable Security: Edge-Computing-Based Framework for IoT," in IEEE Network, vol. 32, no. 5, pp. 92-99, September/October 2018.
+
+
+
+Research Manuscript:
+
+    S. Roy, T. Crowley, B. L. Mark, K. Zeng and K. N. Khasawneh, "Evaluating and Optimizing Cryptographic Offloading for IoT Devices: Attribute-Based Encryption Case Study," 2024 IEEE International Conference on Communications Workshops (ICC Workshops), Denver, CO, USA, 2024.
+
+
+
+    
