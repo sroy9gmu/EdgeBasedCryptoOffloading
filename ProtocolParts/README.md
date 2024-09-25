@@ -2,7 +2,7 @@
 
 This page lists detailed instructions for installing necessary packages which are required for executing the reference as well as enhanced protocol.
 
-1.  AES crypto library - Please follow instructions at https://github.com/sroy9gmu/crypto_characterization_shared/tree/main/CryptoLibraries/PyCryptodome#readme
+1.  AES crypto library - Please follow instructions at https://github.com/sroy9gmu/MicroprocessorBasedCryptoCharacterization/tree/main/CryptoLibraries/PyCryptodome 
 
 2.  ABE crypto libraries
 
